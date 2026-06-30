@@ -41,7 +41,7 @@ body{
     display: flex;
     width: 5rem;
     height: auto;
-    padding: 5px;
+    padding: 3px;
 }
 .navigation{
     display: flex;
@@ -54,17 +54,13 @@ body{
     text-decoration: none;
     color: var(--texto-cabecalho) 
 }
-
-.banner{
-    display: flex;
-    
-    justify-content: center;
-    background-color: var(--banner-cor);
-    margin: 20px;
-    text-align: center;
-    padding: 144px 350px;
-    border-radius: 10px;
+.navigation a :hover{
+    list-style: none;
+    text-decoration: none;
+    pointer-events: none;
+    color: aquamarine;
 }
+
 .content-section{
     display: flex;
     justify-content: center;
@@ -90,6 +86,26 @@ body{
     color: var(--texto-artigo);
     font-family: "Montserrat", sans-serif;
 }
+.servico {
+    display: flex;
+    justify-content:center ;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 100px;
+}
+.servico h1{
+    text-decoration: none;
+    list-style: none;
+    color: var(--texto-artigo);
+}
+.servico img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
 @media(max-width: 768px){
     .navigation{
         justify-content: center;
